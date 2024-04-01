@@ -1,1 +1,2 @@
-console.log("Rishabh");
+const accId = 123;
+accId = 2;
