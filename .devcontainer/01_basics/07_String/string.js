@@ -16,6 +16,15 @@ console.log(game_name.charAt(2)); // CharAt funtion or prototype used for find w
 console.log(game_name.indexOf('W')); //Give u the output indexof Function it tells in which index the char is present. 
  */
 
-const newString = game_name.substring(0,4)
-console.log(newString);
+// const newString = game_name.substring(0,4)
+// console.log(newString);
 
+console.log(game_name);
+const another = game_name.slice(1,4);
+console.log(another);
+
+const url = "https://heelloWorld/rishabh%.com";
+console.log(url.replace('%','30')); // Only changes for this Line only not on the Actual variable
+
+console.log(url.includes("heell")); // Includes parameter is present or not.  
+console.log(url.split('-'));
