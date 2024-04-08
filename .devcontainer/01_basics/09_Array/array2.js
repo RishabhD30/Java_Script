@@ -11,3 +11,11 @@ const a2 = ["Rishabh" , "Dwivedi" , "javascript"]
 // const spreadarr = [...a1, ...a2];
 // console.log(spreadarr);
 
+/* PUSH - method is used to add element in the array where the it conflict the 2 array like it add 1 whole array as an element*/ 
+a1.push(a2);
+console.log(a1);
+
+/*  FLAT  */
+/* FLAT with infinity - > Where INfinity is the dept of array , if many array present in the 1 array then it will convert in one only */
+const ar = a1.flat(Infinity);  
+console.log(ar);
