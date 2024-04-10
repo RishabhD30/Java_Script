@@ -51,6 +51,8 @@ const user = [
 ]
 
 console.log(users);
-console.log(Object.keys(users)); // Kisi bhi object ki sari  Keys print krdeta h 
-console.log(Object.values(users)); // kisi bhi object ki sari values print krdeta h
-console.log(Object.entries(users)); // This will convert every key value in a array n seperated by " , "  in return as Array  
+console.log(Object.keys(users));   // Kisi bhi object ki sari  KeyS print krdeta h 
+console.log(Object.values(users));   // kisi bhi object ki sari ValueS print krdeta h
+console.log(Object.entries(users));   // This will convert every key value in a array n seperated by " , "  in return as Array  
+
+console.log(users.hasOwnProperty('email'));  // Also return Boolean Output //this check that is any key present in the Object or Not?
