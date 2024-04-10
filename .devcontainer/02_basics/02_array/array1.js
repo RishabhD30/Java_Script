@@ -1,5 +1,5 @@
 const arr = [2, 4, 6, 8 ,10];
-// console.log(arr); // PRint full array 
+// console.log(arr); // Print full array 
 // console.log(arr[3]); // for one element
 
 // console.log(arr.length);

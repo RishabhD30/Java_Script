@@ -19,3 +19,13 @@ console.log(a1);
 /* FLAT with infinity - > Where INfinity is the dept of array , if many array present in the 1 array then it will convert in one only */
 const ar = a1.flat(Infinity);  
 console.log(ar);
+
+
+console.log(Array.isArray(ar)); //isArray() return True or False--> THis Method check that in the paranthesis the variable is a Array or not?
+ 
+console.log(Array.from("Rishabh")); // From() --> Method will convert it in the Array  
+
+let var1 = 100;
+let var2 = 200;
+let var3 = 300;
+console.log(Array.of(var1,var2,var3,ar)); // of()--> This method wil make the array from the combinations of the multiple variabale.
