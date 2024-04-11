@@ -9,3 +9,13 @@ if(true){             // Block Scope
     // console.log(b);
     console.log(c);
 }
+
+if(true){
+    const name = "Rishabh"
+    if(name == "Rishabh"){
+        const web = " github"
+        console.log(name+web);  // will work
+    }
+    console.log(name);  // Not write 
+}
+console.log(name);  // Not write 
