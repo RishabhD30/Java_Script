@@ -16,6 +16,18 @@ if(true){
         const web = " github"
         console.log(name+web);  // will work
     }
-    console.log(name);  // Not write 
+    // console.log(name);  // Not write 
 }
-console.log(name);  // Not write 
+// console.log(name);  // Not write 
+
+//+++++++++++++++++++++ Interesting +++++++++++
+// We can define 2 ways to define Functions
+function addone(num){
+    return num+1;
+}
+console.log(addone(5));
+
+const addtwo = function(num) {
+    return num+2;
+}
+console.log(addtwo(5));

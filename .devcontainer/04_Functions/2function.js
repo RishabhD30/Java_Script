@@ -29,3 +29,4 @@ function printSecond(getvalue ) {
     return getvalue[1];
 }
 console.log(printSecond(newarr));
+
