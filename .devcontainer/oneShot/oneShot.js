@@ -39,22 +39,55 @@ const balance = 1000 ;
 
 //Switch keyword==> It works like -  If , ifelse , ELse, 
 
-const cur_month = 3;
+// const cur_month = 3;
 
-switch (cur_month) {                    // it checks the condition 
-    case 1:                             // this is like the ifElse condition 
-        console.log(`Januarry` );
-        break;
-    case 2:
-        console.log(`Feburary` );
-        break;
-    case 3:
-        console.log(`March` );
-        break;
-    case 4:
-        console.log(`April` );
-        break;
-    default:
-        console.log("No value match");
-        break;
-}
+// switch (cur_month) {                    // it checks the condition 
+//     case 1:                             // this is like the ifElse condition 
+//         console.log(`Januarry` );
+//         break;
+//     case 2:
+//         console.log(`Feburary` );
+//         break;
+//     case 3:
+//         console.log(`March` );
+//         break;                          // If break keyword is not present then so this all lines of   code will be run till the default value , default not be executed   
+//     case 4:
+//         console.log(`April` );
+//         break;
+//     default:
+//         console.log("No value match");
+//         break;
+// }
+
+/** Truthy And Falsy value */
+
+/* False values -> false , 0 , -0 , NAN , " ", undefined , null BigInt 0n  */
+/* True values -> true , "0" , 'false' , [] , {} , fuction(){}*/
+
+// // To checek array is empty or not 
+// const arr = [];
+// if(arr.length == 0 ){
+//     console.log("yes its empty");
+// }
+// // To check object
+// const newobj = { };
+// if(Object.keys(newobj).length === 0 ){   // Object.keys will returns an array then out the array length is equal to 0 
+//     console.log("yes object is also empty");
+// }
+
+
+/* Nullish Colescing Operators(??) : Null undefined(Mainly used for these two)*/
+
+// let var1 ;
+// // var1 =  5 ?? 20
+// // var1 =  null ?? 20
+// var1 =  undefined ?? 20
+
+// console.log(var1);
+
+/*  Terniary Operator  */
+
+// (condition ? true : false) // Syntax 
+
+const arr = [] ;
+((Array.isArray(arr))? console.log("yes its an Array") : console.log("Dont have data"))
