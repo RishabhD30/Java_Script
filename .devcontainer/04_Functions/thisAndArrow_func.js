@@ -37,7 +37,7 @@ const users = {
 //     return num1+num2;
 // }
 
-        /** Implicti Function where we dont use curly braces nor  Return function  */
+        /** Implict Function where we dont use curly braces nor  Return function  */
 const addTwo = (num1,num2) => (num1+num2)  // MAximum used in React Librarry
 
 console.log(addTwo(2,3));
