@@ -44,4 +44,26 @@ const likeArr = [1,2,3,5,10] ;
 function printme(val) {
     console.log(val);
 }
-likeArr.forEach(printme);
+// likeArr.forEach(printme);
+
+
+//create an array where an object will be accessed inside the array as below
+const myarr = [
+    {
+        langshortcut :"js" ,
+        langname : "javascript"
+    },
+    {
+        langshortcut: "py",
+        langname: "python"
+    },
+    {
+        langshortcut : "rb",
+        langname: "ruby"
+    }
+]
+
+myarr.forEach((val)=>{
+    console.log(`${val.langshortcut} :- ${val.langname}`);    
+})
+
