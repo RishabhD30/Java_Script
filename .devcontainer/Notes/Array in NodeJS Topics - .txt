@@ -1,0 +1,21 @@
+Array in NodeJS Topics :- 
+
+1) Basics prototypes --> (Lenght , pop , push , key , typeof )
+
+2) Array.join()
+
+3) Shift and Unshift()
+
+4) SLICE and SPLICE
+
+5) INCLUDES() AND INDEXOF()
+
+6) Concat or Spread function  //Both returns same 
+
+7) FLAT           ///* FLAT with infinity - > Where INfinity is the dept of array , if many array present in the 1 array then it will convert in one only */
+ 
+8) isArray        //isArray() return True or False--> THis Method check that in the paranthesis the variable is a Array or not?
+ 
+9) from           // From() --> Method will convert it in the Array  
+
+10) of()          // of()--> This method wil make the array from the combinations of the multiple variabale.
