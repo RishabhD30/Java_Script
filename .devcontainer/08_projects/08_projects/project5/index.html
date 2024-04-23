@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event learning </title>
+</head>
+<body>
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id = "photoshop" src="/project5/Img/img1.png" alt=""></li>
+            <li><img width="200px" id="japan" src="/project5/Img/img2.jpg" alt=""></li>
+            <li><img width="200px" id="river"   src="/project5/Img/img3.jpg" alt=""></li>
+            <li><img width="200px" id="owl" src="/project5/Img/img4.jpg" alt=""></li>
+            <li><img width="200px" id ="prayer" src="/project5/Img/img5.jpg" alt=""></li>
+            <li><a href="https://www.google.com" id="google">Gooogle </a></li>
+        </ul>
+    </div>
+
+</body>
+    <script>
+        // document.getElementById('owl').addEventListener('click' , function(e){
+        //     // alert('owlll clicked');
+        //     console.log(e);
+        // })
+
+    // Propagation => i) Bubbling(down to up ) 
+        // document.getElementById("images").addEventListener('click', function(e){
+        //     console.log("clicked inside the ul");
+        // },false)
+        // document.getElementById("owl").addEventListener('click', function(e){
+        //     console.log("owl clicked");
+        // },false)
+        
+    // ii) Capturing(up to down)
+        // document.getElementById("images").addEventListener('click', function(e){
+        //     console.log("clicked inside the ul");
+        // },true)
+        // document.getElementById("owl").addEventListener('click', function(e){
+        //     console.log("owl clicked");
+        // },true)
+    
+
+    // STOP propagation->  means if i click on owl picture then it will not propagate to another event like to stop bubbling
+        // document.getElementById("images").addEventListener('click', function(e){
+        //     console.log("clicked inside the ul");
+        // },false)
+        // document.getElementById("owl").addEventListener('click', function(e){
+        //     console.log("owl clicked");
+        //     e.stopPropagation()
+        // },false)
+
+        document.getElementById('google').addEventListener('click',function(e) {
+            e.preventDefault();  // preventDefault() work like the action will stop the automatic action 
+        })
+
+    //Remove the image whenever i click
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log();
+            if(e.target.tagName==='IMG'){
+                e.target.parentNode.remove();
+            };
+        },false)
+
+    </script>
+</html>     
