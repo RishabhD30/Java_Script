@@ -1,0 +1,15 @@
+java script is a Synchronous and sungle thread by default.
+
+
+block code(Synchronous) vs non-block code(Async)
+//block code ex(single thread) - if i want to register the user id in Database then fist step is get successfull register then we have to notifify to the user. 
+//non-block code ex(async thread) - 2 process are working constantly parallel. there is no dependency is knwn as the asynchronous.
+
+
+2 things are there in WEB API 
+...
+set timeout(func(){},5000); // this means to run after the 5 sec mentioned in the syntax;
+...
+set Interval(func(){}, 1000); // this method is telling that to run in every specific time mentiooned in the syntax;
+
+set timout will push the function inside the REgister CAll back then if runs it will add into queue then stack. 
