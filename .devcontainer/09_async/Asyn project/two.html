@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let timely;
+    const startDate = function(){
+        timely = setInterval(timme, 1000);
+        function timme(){
+            let date = new Date();
+            console.log(`Now` , date.toLocaleTimeString());
+        }
+    } 
+    const stopDate = function(){clearInterval(timely)}
+    
+    document.querySelector('#start').addEventListener('click',startDate)
+    document.querySelector('#stop').addEventListener('click',stopDate)
+    
+
+</script>
+</html>

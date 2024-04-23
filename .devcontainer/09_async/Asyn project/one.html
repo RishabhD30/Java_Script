@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Learning</h1>
+    <button id="stop">Stop!</button>
+
+</body>
+<script>
+    const prin_name = function(){
+        console.log("rishabh is learning");
+    }
+    const change_line = function(){
+        document.querySelector("h1").innerHTML = "learning setTimeout ";
+    }
+    // setTimeout(prin_name, 3000); // only we have to give the reference of the funcion not to execute like print(),
+    const change_me =setTimeout(change_line , 3000);
+
+    const clear_time = document.getElementById('stop').addEventListener('click', function(){
+            clearTimeout(change_me)
+            console.log("Its STOPPED");
+    })
+
+
+</script>
+</html>
